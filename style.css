@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+ /* min-width: 100vh; */
+ font-family: 'Itim', cursive;
+ background-color: white;
+ font-size: 30px;
+}
+
+header {
+  background-image: url(images/martial-arts-master-on-wall-260nw-1916348738.webp);
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px black;
+}
+
+.arts{
+  background-image: url(images/andreyuu181200028.webp);
+  background-size: cover;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px black;
+}
+
+footer {
+  background-image: url(images/istockphoto-1361593297-170667a.jpg);
+  background-size: cover;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px black;
+}
+
+h1 {
+  font-size: 3.2em;
+  text-shadow: 0 5px rgb(1, 29, 1);
+  color: green;
+}
+h2 {
+  font-size: 2.8em;
+  text-shadow: 0 5px rgb(1, 29, 1);
+  color: green;
+}
+img {
+  border-radius: 50%;
+  box-shadow: 0 10px 20px black;
+}
+img {
+  animation-name: heartbeat;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes heartbeat {
+  0%    { width:150px; }
+  50%   { width:250px; }
+  100%  { width:150px; }
+}
+
+p {
+  color: red;
+  text-shadow: 0 1.5px 2px black;
+  margin: 20px auto;
+  line-height: 30pxpx;
+}
+#img_anim{
+  height: 150px;
+}
+#btn-green {
+  color: red;
+  background: green;
+  text-decoration: none;
+  text-shadow: 0 2px black;
+  padding: 5px;
+  box-shadow: 0 5px 5px black ;
+  border-radius: 50px;
+}
+
+#btn-green:hover {
+  color: white;
+  background: red;
+  text-shadow: 0 3px 5px black;
+  box-shadow: 0 8px 8px black ;
+  transition: ease-in-out 1s;
+  font-size: 28px;
+}
+
+
+li {
+  display: inline;
+  list-style: none;
+}
+
+.card {
+  width: 1000px;
+  margin: 20px auto;
+  text-align: center;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+ul > li > a {
+  font-size: 60px;
+  color: red;
+}
+
+ul > li > a:hover {
+  font-size: 70px;
+  color: black;
+  transition: ease-in-out 1s;
+}
+
+ul {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .card{
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .card {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .card {
+    width: 300px;
+  }
+}
